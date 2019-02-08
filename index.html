@@ -4,6 +4,21 @@
     <meta charset="utf-8">
     <title>Flexbox</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script type="text/javascript">
+      document.cookie = "nom=Michel";
+      document.cookie = "age=42";
+      document.cookie = "voiture=Renault Safrane";
+
+      var toto = document.cookie;
+      var tata = toto.split(";");
+
+      var message = "<ul>"
+      for(var i = 0 ; i < tata.length ; i++){
+        message += "<li>" + tata[i] + "</li>";
+      }
+        message += "</ul>"
+      document.write(message);
+    </script>
   </head>
   <body>
     <div id="flexMachin">
